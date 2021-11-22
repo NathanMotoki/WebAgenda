@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&family=Satisfy&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+header {
+    background-color: rgb(0, 255, 128);
+    height: 50px;
+}
+
+.text-header {
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    padding: 5px 20px;
+}
+
+/* Main */
+
+.main-button {
+    width: 300px;
+    height: 621px;
+    float: left;
+}
+
+.main-button ul{
+    list-style-type: none;
+    padding-top: 70%;
+}
+
+.main-button li{
+    padding-bottom: 30px;
+    width: 200px;
+}
+
+.main-info {
+    max-width: 950px;
+    height: 620px;
+    float: right;
+    background-color: rgba(134, 130, 130, 0.089);
+    padding: 10px;
+}
+
+/* Footer */
+
+.footer-info {
+    background-color: rgb(0, 255, 128);
+    height: 200px;
+    margin-top: 620px;
+}
+
+.footer-info-columUm{
+    width: 400px;
+    float: left;
+    padding-top: 36px;
+}
+
+.footer-info-columDois{
+    padding-right: 200px;
+    width: 400px;
+    float: right;
+    padding-top: 60px;
+}
+
+.footer-copy {
+    background-color: rgb(0, 187, 93);
+    height: 50px;
+    text-align: center;
+    padding: 15px;
+}
+
+.btn:hover {
+    transition: 0.5s;
+    letter-spacing: 2px;
+}
+
+/* PopUp */
+
+#popup {
+    position: fixed;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background: white;
+    width: 450px;
+    padding: 25px 50px 50px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.637);
+    transition: 0.5s;
+    color: rgba(0, 119, 60, 0.548);
+    border-radius: 10px;
+
+    visibility: hidden;
+}
+
+#popup .conteudo {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#popup .conteudo h6 {
+    font-weight: 500;
+    margin: 20px 0 10px;
+}
+
+#popup .conteudo #text {
+    padding-bottom: 80px;
+}
+
+#popup input:focus{
+    outline: none;
+    border: 1px solid rgb(0, 92, 46);
+}
+
+#popup .conteudo .cadastrar {
+    font-family: arial;
+    background-color: rgb(0, 255, 128);
+    width: 120px;
+    height: 40px;
+    color: white;
+    border: none;
+    font-size: 19px;
+    border-radius: 5px;
+    margin: 20px;
+    margin-left: 250px;
+}
+
+#popup .conteudo .cadastrar:hover {
+    transition: 1s;
+    letter-spacing: 1px;
+}
+
+.popup-exit i{
+    margin-left: 350px;
+    margin-bottom: 20px;
+    color: rgba(0, 0, 0, 0.356);
+    cursor: pointer;
+}
+
+#popup.active {
+    visibility: visible;
+    top: 50%;
+}
+
+/* Cards */
+
+.main-info section {
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    border-radius: 100px;
+    width: 250px;
+    padding: 5px;
+    margin: 5px;
+    visibility: hidden;
+    background: rgba(156, 245, 200, 0.158);
+    position: relative;
+}
+

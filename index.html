@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Links  Css-->
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+
+    <title>Agenda</title>
+</head>
+<body>
+    <header>
+        <div class="text-header">WebAgenda</div>
+    </header>
+
+    <main>
+        <section class="main-button">
+            <ul>
+                <li>
+                    <button type="button" class="btn btn-outline-success" onclick="popupToggle()">Adicionar</button>
+                </li>
+                <li>
+                    <button type="button" class="btn btn-outline-success">Remover</button>
+                </li>
+                <li>
+                    <button type="button" class="btn btn-outline-success">Informação</button>
+                </li>
+            </ul>
+        </section>
+        <section class="main-info">
+            <section class="card-info">
+                
+            </section>
+    </main>
+
+    <footer>
+        <section class="footer-info">
+            <div class="footer-info-columUm">
+                <h5>Contato</h5>
+                <div>Nathan Motoki</div>
+                <div>nathanmtoki@gmail.com</div>
+                <div>(44)99836-1929</div>
+            </div>
+            <div class="footer-info-columDois">
+                <div>Rua José Iba, 480</div>
+                <div>87023-420</div>
+                <div>Maringá-PR</div>
+            </div>
+        </section>
+        <section class="footer-copy">
+            <h6>Todos os direitos reservados por &copy;MotokiEnterprise</h6>
+        </section>
+    </footer>
+
+    <div id="popup">
+        <div class="popup-exit">
+            <i class="fas fa-times" onclick="popupToggle()"></i>
+        </div>
+        <div class="conteudo">
+            <h2>Lembretes</h2>
+            <h6>Título do lembrete</h6>
+            <input class="popup-titulo" type="text" placeholder="Título">
+            <h6>Data do evento</h6>
+            <input class="popup-data" type="date" placeholder="Data">
+            <h6>Mensagem</h6>
+            <input class="popup-msg" type="text" placeholder="Texto" id="text">
+            <input type="button" value="Cadastrar" class="cadastrar" onclick="cadastrar()">
+        </div>
+    </div>
+
+
+    <script src="js/modal.js"></script>
+    <script src="https://kit.fontawesome.com/1297470655.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
