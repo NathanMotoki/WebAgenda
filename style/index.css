@@ -153,6 +153,83 @@ header {
     top: 50%;
 }
 
+/* PopUp Delete*/
+
+#popup-delete {
+    position: fixed;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background: white;
+    width: 450px;
+    padding: 25px 50px 50px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.637);
+    transition: 0.5s;
+    color: rgba(0, 119, 60, 0.548);
+    border-radius: 10px;
+
+    visibility: hidden;
+}
+
+#popup-delete .conteudo-delete {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#popup-delete .conteudo-delete h6 {
+    font-weight: 500;
+    margin: 20px 0 10px;
+}
+
+#popup-delete .conteudo-delete #text-delete {
+    padding-bottom: 80px;
+}
+
+#popup-delete input:focus{
+    outline: none;
+    border: 1px solid rgb(0, 92, 46);
+}
+
+#popup-delete textarea:focus {
+    outline: none;
+    border: 1px solid rgb(0, 92, 46);
+}
+
+#popup-delete .conteudo-delete .delete {
+    font-family: arial;
+    background-color: rgb(255, 0, 0);
+    width: 120px;
+    height: 40px;
+    color: white;
+    border: none;
+    font-size: 19px;
+    border-radius: 5px;
+    margin: 20px;
+    margin-left: 250px;
+}
+
+#popup-delete.conteudo-delete .delete:hover {
+    transition: 1s;
+    letter-spacing: 1px;
+}
+
+.popup-exit-delete i{
+    margin-left: 350px;
+    margin-bottom: 20px;
+    color: rgba(0, 0, 0, 0.356);
+    cursor: pointer;
+}
+
+#popup-delete.active {
+    visibility: visible;
+    top: 50%;
+}
+
 /* Cards */
 
 .main-info section {
@@ -169,5 +246,6 @@ header {
     visibility: hidden;
     background: rgba(156, 245, 200, 0.158);
     position: relative;
+    cursor: pointer;
 }
 

@@ -26,14 +26,16 @@ function cards() {
     var tituloInfo = popupTitulo.value;
     var dataInfo = popupData.value;
     var textoInfo = popupTexto.value;
-
+    
     var cardTitulo = document.createTextNode(tituloInfo);
     var cardInfo = document.createTextNode(dataInfo);
     var cardTexto = document.createTextNode(textoInfo);
 
+
     var div = document.createElement('div');
 
     div.setAttribute('class', 'card');
+    div.setAttribute('onclick', 'clicar()');
 
     card.appendChild(div)
     div.appendChild(cardTitulo);
@@ -51,4 +53,20 @@ function cards() {
     aux++;
     console.log(aux)
 }
+
+
+function clicar() {
+    var cardSelect = document.querySelector(".card");
+    const popupTituloDel = document.querySelector(".popup-titulo-delete");
+    const popupDataDel = document.querySelector(".popup-data-delete");
+    const popupTextoDel = document.querySelector(".popup-msg-delete");
+
+    const popupDel = document.getElementById('popup-delete');
+
+    popupTituloDel.value = titulo;
+
+    popupDel.classList.toggle('active');
+}
+
+
 
